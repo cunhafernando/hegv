@@ -1,0 +1,129 @@
+<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <%= image_tag "caroussel/team-of-doctor-1.jpg", :class => "w-100" %>
+        <div class="container">
+          <div class="carousel-caption text-start">
+          <h1>Estréia da nova intranet HEGV!</h1>
+          <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+      <%= image_tag "caroussel/team-of-doctor-2.jpg", :class => "w-100" %>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Estréia da nova intranet HEGV!</h1>
+            <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+      <%= image_tag "caroussel/team-of-doctor-3.jpg", :class => "w-100" %>
+        <div class="container">
+          <div class="carousel-caption text-end">
+          <h1>Estréia da nova intranet HEGV!</h1>
+          <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+      <%= image_tag "caroussel/team-of-doctor-4.jpg", :class => "w-100" %>
+        <div class="container">
+          <div class="carousel-caption text-end">
+          <h1>Estréia da nova intranet HEGV!</h1>
+          <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+      <%= image_tag "caroussel/team-of-doctor-5.jpg", :class => "w-100" %>
+        <div class="container">
+          <div class="carousel-caption text-end">
+          <h1>Estréia da nova intranet HEGV!</h1>
+          <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
+          <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #045B93;">
+    <div class="container-fluid">  
+        <%= link_to root_path do %>
+            <%= image_tag "header/logo_hegv_background_none.png", :class => "mx-1" %>
+        <% end %>     
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+            <%= link_to "Home", root_path, class: "nav-link active" %>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="manuaisProcedimentos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Manuais e Procedimentos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="manuaisProcedimentos">
+                <li><a class="dropdown-item" href="#">POP's</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-NEP-001%20Lista%20de%20Presen%C3%A7a%20(CORRETA).doc">Lista de Presença</a></li>
+                <li><a class="dropdown-item" href="http://10.42.68.5/files/Dashboard%20Bancada.xlsm">Formulário de Bancada</a></li>
+                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-TI-010%20Solicitacao%20de%20Acesso.pdf">Formulário de Solicitação de Acesso</a></li>
+                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-DP-008%20Ocorrencia%20de%20Ponto%20(1).docx">Ocorrência de Ponto</a></li>
+                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-DP-018%20Solicitacao%20de%20Troca%20de%20Plantao.docx">Formulário de Troca de Plantão</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="comunicaoesEventos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Comunicação e Eventos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="comunicaoesEventos">
+                <li><a class="dropdown-item" href="#">Notícias</a></li>
+                <li><a class="dropdown-item" href="#">Comunicados</a></li>
+                <li><a class="dropdown-item" href="#">Eventos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Campus Virtual</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="linksUteis" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Links Úteis
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="linksUteis">
+                <li><a class="dropdown-item" href="http://10.42.69.4:8080/vitai/pages/login.do">TI Med - HEGV</a></li>
+                <li><a class="dropdown-item" href="http://10.42.169.5:8080/vitai/pages/login.do">TI Med - UPA</a></li>
+                <li><a class="dropdown-item" href="\\Srvbiolab\bioslab\Sys\PMCL.exe">Bios Lab</a></li>
+                <li><a class="dropdown-item" href="http://centraldesolucoes.cesp/glpi/">GLPI - Central de Soluções</a></li>
+                <li><a class="dropdown-item" href="https://ipcep.zamedsaude.com.br/">Zamed - Logística</a></li>
+                <li><a class="dropdown-item" href="https://cadastro.saude.gov.br/segcartao/?contextType=external&username=string&contextValue=%2Foam&password=sercure_string&challenge_url=https%3A%2F%2Fcadastro.saude.gov.br%2Fsegcartao&request_id=-690881192035479294&authn_try_count=0&locale=pt_BR&resource_url=http%253A%252F%252Fcadastro.saude.gov.br%252Fnovocartao%252Frestrito%252FusuarioConsulta.jsp">CadWeb</a></li>
+                <li><a class="dropdown-item" href="#">Lista de Ramais</a></li>
+                <li><a class="dropdown-item" href="#">Dúvidas Frequentes</a></li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="d-none d-xl-block ">
+        <%= link_to root_path do %>
+            <%= image_tag "header/pe_secretaria.png", :class => "mx-3 w-50" %>
+        <% end %>
+    </div>
+  </nav>
+</header>

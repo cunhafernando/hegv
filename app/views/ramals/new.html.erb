@@ -1,0 +1,34 @@
+<div class="container">
+  
+  <div class="row align-items-center mt-5 mb-5">
+      <div class="col-6">
+      <h3>Importar lista de ramais</h3>
+        <%= form_tag import_from_excel_path, multipart: true do %>
+          <%= file_field_tag :file %>
+          <%= submit_tag "Importar", :class=> "btn btn-success"%>
+        <% end %>
+      </div>
+      <div class="col-6">
+        <h3>Limpar lista de ramais</h3>
+        <%= link_to "Limpar lista", remove_all_ramals_path, :method => :get, class: "btn btn-danger" %>
+      </div>
+    </div>
+  <div>
+  <div class="row align-items-center">
+      <div class="col-3">
+      
+      </div>
+      <div class="col-6">
+        <h1>Novo Ramal</h1>
+      </div>
+      <div class="col-3">
+      
+      </div>
+  </div>
+  <%= render "form", ramal: @ramal %>
+
+  <br>
+
+    <%= link_to "Back to ramals", ramals_path, class:"btn btn-primary mb-3" %>
+  </div>
+</div>

@@ -112,7 +112,7 @@
                 <li><a class="dropdown-item" href="http://centraldesolucoes.cesp/glpi/">GLPI - Central de Soluções</a></li>
                 <li><a class="dropdown-item" href="https://ipcep.zamedsaude.com.br/">Zamed - Logística</a></li>
                 <li><a class="dropdown-item" href="https://cadastro.saude.gov.br/segcartao/?contextType=external&username=string&contextValue=%2Foam&password=sercure_string&challenge_url=https%3A%2F%2Fcadastro.saude.gov.br%2Fsegcartao&request_id=-690881192035479294&authn_try_count=0&locale=pt_BR&resource_url=http%253A%252F%252Fcadastro.saude.gov.br%252Fnovocartao%252Frestrito%252FusuarioConsulta.jsp">CadWeb</a></li>
-                <li><a class="dropdown-item" href="#">Lista de Ramais</a></li>
+                <li><%= link_to "Lista de Ramais", ramals_path, class:"dropdown-item" %></li>
                 <li><a class="dropdown-item" href="#">Dúvidas Frequentes</a></li>
               </ul>
             </li>
@@ -122,7 +122,7 @@
     </div>
     <div class="d-none d-xl-block ">
         <%= link_to root_path do %>
-            <%= image_tag "header/pe_secretaria.png", :class => "mx-3 w-50" %>
+            <%= image_tag "header/logo_secretaria_saude.png", :class => "mx-3 w-75" %>
         <% end %>
     </div>
   </nav>

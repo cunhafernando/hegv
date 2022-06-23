@@ -1,0 +1,83 @@
+<div class="container">
+
+<div class="row align-items-center mt-5">
+    <div class="col-3">
+    
+    </div>
+    <div class="col-6">
+      <h1>Ramais</h1>
+    </div>
+    <div class="col-3">
+    
+    </div>
+  </div>
+
+  <div class="row align-items-center">
+    <div class="col-6">
+    <!--<h3>Importar lista de ramais</h3>
+      <%= form_tag import_from_excel_path, multipart: true do %>
+        <%= file_field_tag :file %>
+        <%= submit_tag "Importar", :class=> "btn btn-success"%>
+      <% end %>-->
+    </div>
+    <div class="col-6">
+      <!--<h3>Limpar lista de ramais</h3>
+      <%= link_to "Limpar lista", remove_all_ramals_path, :method => :get, class: "btn btn-danger" %>-->
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-6">
+      
+    </div>
+    <div class="col-6">
+      <input class="form-control" type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar" title="Type in a name">
+    </div>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Setor</th>
+        <th scope="col">Ramal</th>
+        <th scope="col">email</th>
+        <th scope="col">Departamento</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody id="myTable">
+      <% @ramals.each do |ramal| %>
+        <tr>
+          <td><small><%= ramal.setor %></small></td>
+          <td><small><%= ramal.telefone %></small></td>
+          <td><small><%= ramal.email %></small></td>
+          <td><small><%= ramal.department %></small></td>
+          <!--<td><%= link_to 'Mostrar', ramal, class: "btn btn-success" %></td>
+          <td><%= link_to 'Editar', edit_ramal_path(ramal), class: "btn btn-warning" %></td>
+          <td><%= link_to 'Apagar', ramal, method: :delete, data: { confirm: 'Você tem certeza?' }, class: "btn btn-danger" %></td>-->
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }       
+        }
+      }
+</script>
+  <%= link_to 'Novo Ramal', new_ramal_path, class: "btn btn-success" %>
+  <br><br>
+</div>

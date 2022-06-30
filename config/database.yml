@@ -81,6 +81,9 @@ test:
 #
 production:
   <<: *default
+  host: localhost
+  adapter: postgresql
+  encoding: utf8
   database: hegv_production
-  username: hegv
+  username: <%= ENV["HEGV_DATABASE_USER"] %>
   password: <%= ENV["HEGV_DATABASE_PASSWORD"] %>

@@ -54,7 +54,7 @@
           <h1>Estréia da nova intranet HEGV!</h1>
           <p class="h6">Navegação se torna mais simples com a chegada do novo sistema.</p>
           <p><a class="btn btn-lg btn-primary" href="#">Saiba mais</a></p>
-          </div>
+          .</div>
         </div>
       </div>
     </div>
@@ -81,10 +81,10 @@
               <ul class="dropdown-menu" aria-labelledby="manuaisProcedimentos">
                 <li><a class="dropdown-item" href="#">POP's</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><%= link_to "Lista de Presença", "documents/nep_lista_de_presenca.pdf", target:"_blank", class:"dropdown-item" %></li>
-                <li><%= link_to "Formulário de Solicitação de acesso", "documents/ti_solicitacao_de_acesso.pdf", target:"_blank", class:"dropdown-item" %></li>
-                <li><%= link_to "Ocorrência de Ponto", "documents/dp_ocorrencia_de_ponto.pdf", target:"_blank", class:"dropdown-item" %></li>
-                <li><%= link_to "Formulário de Troca de Plantão", "images/documents/dp_solicitacao_de_troca_de_plantao.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Lista de Presença", "assets/documents/nep_lista_de_presenca.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Formulário de Solicitação de acesso", "assets/documents/ti_solicitacao_de_acesso.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Ocorrência de Ponto", "assets/documents/dp_ocorrencia_de_ponto.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Formulário de Troca de Plantão", "assets/documents/dp_solicitacao_de_troca_de_plantao.pdf", target:"_blank", class:"dropdown-item" %></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -98,21 +98,21 @@
               </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Campus Virtual</a>
+              <%= link_to "Campus Virtual", "http://10.42.68.6/", target:"_blank", class:"nav-link" %> 
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="linksUteis" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Links Úteis
               </a>
               <ul class="dropdown-menu" aria-labelledby="linksUteis">
-                <li><a class="dropdown-item" href="http://10.42.69.4:8080/vitai/pages/login.do">TI Med - HEGV</a></li>
-                <li><a class="dropdown-item" href="http://10.42.169.5:8080/vitai/pages/login.do">TI Med - UPA</a></li>
-                <li><a class="dropdown-item" href="\\Srvbiolab\bioslab\Sys\PMCL.exe">Bios Lab</a></li>
-                <li><a class="dropdown-item" href="http://centraldesolucoes.cesp/glpi/">GLPI - Central de Soluções</a></li>
-                <li><a class="dropdown-item" href="https://ipcep.zamedsaude.com.br/">Zamed - Logística</a></li>
-                <li><a class="dropdown-item" href="https://cadastro.saude.gov.br/segcartao/?contextType=external&username=string&contextValue=%2Foam&password=sercure_string&challenge_url=https%3A%2F%2Fcadastro.saude.gov.br%2Fsegcartao&request_id=-690881192035479294&authn_try_count=0&locale=pt_BR&resource_url=http%253A%252F%252Fcadastro.saude.gov.br%252Fnovocartao%252Frestrito%252FusuarioConsulta.jsp">CadWeb</a></li>
-                <li><%= link_to "Lista de Ramais", ramals_path, class:"dropdown-item" %></li>
-                <li><a class="dropdown-item" href="#">Dúvidas Frequentes</a></li>
+                <li><small><%= link_to "TI Med - HEGV", "http://10.42.69.4:8080/vitai/pages/login.do", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "TI Med - UPA", "http://10.42.169.5:8080/vitai/pages/login.do", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "LisNet", "https://ultraimagem.lisnet.com.br/laudos/#u", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "GLPI - Central de Soluções", "http://centraldesolucoes.cesp/glpi/", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "Zamed - Logística", "https://ipcep.zamedsaude.com.br/", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "CadWeb", "https://cadastro.saude.gov.br/segcartao/?contextType=external&username=string&contextValue=%2Foam&password=sercure_string&challenge_url=https%3A%2F%2Fcadastro.saude.gov.br%2Fsegcartao&request_id=-690881192035479294&authn_try_count=0&locale=pt_BR&resource_url=http%253A%252F%252Fcadastro.saude.gov.br%252Fnovocartao%252Frestrito%252FusuarioConsulta.jsp", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "Exames de Imagem", "https://laudos.mobilemed.com.br/login", target:"_blank", class:"dropdown-item" %></small></li>
+                <li><small><%= link_to "Lista de Ramais", ramals_path, class:"dropdown-item" %></small></li>
               </ul>
             </li>
             </ul>

@@ -81,11 +81,10 @@
               <ul class="dropdown-menu" aria-labelledby="manuaisProcedimentos">
                 <li><a class="dropdown-item" href="#">POP's</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-NEP-001%20Lista%20de%20Presen%C3%A7a%20(CORRETA).doc">Lista de Presença</a></li>
-                <li><a class="dropdown-item" href="http://10.42.68.5/files/Dashboard%20Bancada.xlsm">Formulário de Bancada</a></li>
-                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-TI-010%20Solicitacao%20de%20Acesso.pdf">Formulário de Solicitação de Acesso</a></li>
-                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-DP-008%20Ocorrencia%20de%20Ponto%20(1).docx">Ocorrência de Ponto</a></li>
-                <li><a class="dropdown-item" href="http://10.42.68.5/files/FOR-DP-018%20Solicitacao%20de%20Troca%20de%20Plantao.docx">Formulário de Troca de Plantão</a></li>
+                <li><%= link_to "Lista de Presença", "documents/nep_lista_de_presenca.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Formulário de Solicitação de acesso", "documents/ti_solicitacao_de_acesso.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Ocorrência de Ponto", "documents/dp_ocorrencia_de_ponto.pdf", target:"_blank", class:"dropdown-item" %></li>
+                <li><%= link_to "Formulário de Troca de Plantão", "images/documents/dp_solicitacao_de_troca_de_plantao.pdf", target:"_blank", class:"dropdown-item" %></li>
               </ul>
             </li>
             <li class="nav-item dropdown">

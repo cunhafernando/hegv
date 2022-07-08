@@ -85,5 +85,6 @@ production:
   adapter: postgresql
   encoding: utf8
   database: hegv_production
-  username: <%= ENV["HEGV_DATABASE_USER"] %>
-  password: <%= ENV["HEGV_DATABASE_PASSWORD"] %>
+  pool: 5
+  username: <%= ENV['HEGV_DATABASE_USER'] %>
+  password: <%= ENV['HEGV_DATABASE_PASSWORD'] %>

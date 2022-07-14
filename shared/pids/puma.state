@@ -1,5 +1,5 @@
 ---
-pid: 674020
-control_url: unix:///tmp/puma-status-1657800968031-674020
-control_auth_token: 6a26f7db5995cbb9893822ebbdef0238
+pid: 674354
+control_url: unix:///tmp/puma-status-1657801240263-674354
+control_auth_token: 8c862695f6fc3ac35f5b57d06ea524e1
 running_from: "/home/administrator/deploy/hegv"

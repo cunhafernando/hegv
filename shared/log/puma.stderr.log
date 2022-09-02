@@ -8884,3 +8884,30 @@ Please report a bug if this causes problems.
 === puma startup: 2022-07-14 12:17:38 +0000 ===
 === puma startup: 2022-07-14 12:19:09 +0000 ===
 === puma startup: 2022-07-14 12:20:40 +0000 ===
+=== puma startup: 2022-09-02 16:51:16 -0300 ===
+DEBUGGER: Attaching after process 30309 fork to child process 30387
+DEBUGGER[bin/rails#30390]: Attaching after process 30309 fork to child process 30390
+DEBUGGER[bin/rails#30393]: Attaching after process 30309 fork to child process 30393
+DEBUGGER[bin/rails#30396]: Attaching after process 30309 fork to child process 30396
+DEBUGGER[bin/rails#30399]: Attaching after process 30309 fork to child process 30399
+DEBUGGER[bin/rails#30402]: Attaching after process 30309 fork to child process 30402
+DEBUGGER[bin/rails#30404]: Attaching after process 30309 fork to child process 30404
+DEBUGGER[bin/rails#30407]: Attaching after process 30309 fork to child process 30407
+=== puma startup: 2022-09-02 16:52:03 -0300 ===
+DEBUGGER: Attaching after process 30705 fork to child process 30782
+DEBUGGER[bin/rails#30785]: Attaching after process 30705 fork to child process 30785
+DEBUGGER[bin/rails#30788]: Attaching after process 30705 fork to child process 30788
+DEBUGGER[bin/rails#30791]: Attaching after process 30705 fork to child process 30791
+DEBUGGER[bin/rails#30794]: Attaching after process 30705 fork to child process 30794
+DEBUGGER[bin/rails#30798]: Attaching after process 30705 fork to child process 30798
+DEBUGGER[bin/rails#30799]: Attaching after process 30705 fork to child process 30799
+DEBUGGER[bin/rails#30797]: Attaching after process 30705 fork to child process 30797
+=== puma startup: 2022-09-02 16:53:34 -0300 ===
+DEBUGGER: Attaching after process 31489 fork to child process 31566
+DEBUGGER[bin/rails#31569]: Attaching after process 31489 fork to child process 31569
+DEBUGGER[bin/rails#31571]: Attaching after process 31489 fork to child process 31571
+DEBUGGER[bin/rails#31575]: Attaching after process 31489 fork to child process 31575
+DEBUGGER[bin/rails#31577]: Attaching after process 31489 fork to child process 31577
+DEBUGGER[bin/rails#31580]: Attaching after process 31489 fork to child process 31580
+DEBUGGER[bin/rails#31583]: Attaching after process 31489 fork to child process 31583
+DEBUGGER[bin/rails#31587]: Attaching after process 31489 fork to child process 31587
